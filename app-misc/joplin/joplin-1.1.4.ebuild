@@ -13,6 +13,7 @@ LICENSE="MIT"
 SLOT="0"
 
 DEPEND="net-libs/nodejs[npm]"
+RDEPEND="net-print/cups"
 
 KEYWORDS="~amd64"
 
