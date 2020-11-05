@@ -12,7 +12,7 @@ SRC_URI="https://github.com/laurent22/joplin/archive/v${PV}.tar.gz -> ${P}.tar.g
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND="net-libs/nodejs[npm]"
+DEPEND="net-libs/nodejs[npm] app-crypt/libsecret"
 RDEPEND="net-print/cups"
 
 KEYWORDS="~amd64"
@@ -34,6 +34,9 @@ src_compile() {
 	export LANG=en_US.utf8
 
 	sed -i '/"husky": ".*"/d' package.json
+
+	npm install --cache ${S}/npm-cache execa
+
 	npm install || die
 	einfo "Building ${dir} package via npm"
 	cd ${S}/ElectronClient
