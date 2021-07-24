@@ -15,7 +15,7 @@ if [[ ${PV} == *9999 ]]; then
 	SRC_URI=""
 	KEYWORDS=""
 else
-	SRC_URI="https://github.com/LemonBoy/bar/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://github.com/drscream/lemonbar-xft/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~x86"
 fi
 
@@ -32,5 +32,5 @@ RDEPEND="${DEPEND}
 BDEPEND=""
 
 if [[ ${PV} != *9999 ]]; then
-	S="${WORKDIR}/bar-${PV}"
+	S="${WORKDIR}/lemonbar-xft-${PV}"
 fi
