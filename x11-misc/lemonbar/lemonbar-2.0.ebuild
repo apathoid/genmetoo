@@ -21,11 +21,8 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="+xft"
 
-DEPEND="x11-libs/libxcb
-	xft? ( x11-libs/libXft )
-"
+DEPEND="x11-libs/libxcb x11-libs/libXft"
 RDEPEND="${DEPEND}
 	dev-lang/perl
 "
