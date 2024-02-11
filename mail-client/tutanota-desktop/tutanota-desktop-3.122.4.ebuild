@@ -16,10 +16,6 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 
-BDEPEND="
-	net-libs/nodejs[npm]
-"
-
 RDEPEND="
 	app-crypt/libsecret[crypt]
 	dev-libs/nss
