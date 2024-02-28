@@ -10,6 +10,4 @@ Icon=tutanota-desktop
 StartupWMClass=tutanota-desktop
 MimeType=x-scheme-handler/mailto;
 Categories=Network;
-X-Tutanota-Version=3.121.4
 TryExec=/opt/tutanota-desktop/tutanota-desktop
-

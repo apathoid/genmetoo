@@ -1,0 +1,15 @@
+BDEPEND=>=dev-util/intltool-0.50 sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=dev-build/automake-1.16.5:1.16 ) || ( >=dev-build/autoconf-2.72-r1:2.72 >=dev-build/autoconf-2.71-r6:2.71 ) >=dev-build/libtool-2.4.7 virtual/pkgconfig
+DEFINED_PHASES=configure install prepare
+DEPEND=X? ( >=x11-libs/libX11-1.4 x11-libs/libXxf86vm x11-libs/libxcb ) appindicator? ( dev-libs/libappindicator ) drm? ( x11-libs/libdrm ) geoclue? ( app-misc/geoclue:2.0 dev-libs/glib:2 ) wayland? ( >=dev-libs/wayland-1.21.0 )
+DESCRIPTION=Adjust the color temperature of your screen according to your surroundings.
+EAPI=8
+HOMEPAGE=https://gitlab.com/chinstrap/gammastep
+INHERIT=autotools systemd
+IUSE=X apparmor appindicator drm geoclue systemd wayland
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=X? ( >=x11-libs/libX11-1.4 x11-libs/libXxf86vm x11-libs/libxcb ) appindicator? ( dev-libs/libappindicator ) drm? ( x11-libs/libdrm ) geoclue? ( app-misc/geoclue:2.0 dev-libs/glib:2 ) wayland? ( >=dev-libs/wayland-1.21.0 )
+SLOT=0
+SRC_URI=https://gitlab.com/chinstrap/gammastep/-/archive/v2.0.8/gammastep-v2.0.8.tar.gz -> gammastep-2.0.8.tar.gz
+_eclasses_=autotools	e4cf390b19033d5ca443765bc8537b81	gnuconfig	b6b3e92f8b8c996400074b5f61a59256	libtool	9d3a9a889a6fa62ae794f817c156491b	multilib	c19072c3cd7ac5cb21de013f7e9832e0	systemd	c8b03e8df84486aa991d4396686e8942	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084
+_md5_=bd4a45804f7c740397886d1072b05a97
