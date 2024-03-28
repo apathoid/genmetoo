@@ -27,7 +27,7 @@ emaint -r genmetoo sync
 emerge --sync
 ```
 
-3 (optional). Mask all the packages and unmask only needed ones:
+3 (optional). Mask all packages and unmask only those you need:
 
 - add to `/etc/portage/package.mask/genmetoo`
 
