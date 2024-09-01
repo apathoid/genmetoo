@@ -1,0 +1,13 @@
+diff --git a/src/exec.rs b/src/exec.rs
+index 7bdad94..532d74e 100644
+--- a/src/exec.rs
++++ b/src/exec.rs
+@@ -76,7 +76,7 @@ pub fn exec(command: ExecCommand, uiclient: &dyn UiClient, verbose: bool) -> any
+     };
+ 
+     let ns_name = if let Some(c_ns_name) = parsed_command.custom_netns_name.clone() {
+-        c_ns_name
++        format!("vo_{c_ns_name}")
+     } else {
+         let short_name = if parsed_command.server.len() > 7 {
+             bs58::encode(&parsed_command.server).into_string()[0..7].to_string()
